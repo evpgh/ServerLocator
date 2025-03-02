@@ -1,0 +1,13 @@
+{
+  "name": "continent-detector",
+  "version": "1.0.0",
+  "description": "Chrome extension to show the continent of the website server",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "bun build ./src/background.js --outdir ./dist && bun build ./src/popup.js --outdir ./dist && cp ./src/manifest.json ./dist/ && cp -r ./src/icons ./dist/ && cp src/popup.html ./dist/"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {}
+}

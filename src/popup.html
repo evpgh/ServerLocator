@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Continent Detector</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 250px;
+      padding: 10px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .icon-container {
+      margin-bottom: 10px;
+    }
+    .icon {
+      width: 64px;
+      height: 64px;
+    }
+    .info {
+      text-align: center;
+    }
+    .hostname {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .continent {
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon-container">
+      <img id="continentIcon" class="icon" src="icons/globe32.png" alt="Continent">
+    </div>
+    <div class="info">
+      <div id="hostname" class="hostname">loading...</div>
+      <div id="continent" class="continent">loading...</div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
