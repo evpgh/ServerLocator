@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Continent Detector",
+  "name": "ServerLocator",
   "version": "1.0.0",
-  "description": "Shows the continent of the website server you're connected to",
+  "description": "Detects the country and continent of the website server you're connected to",
   "permissions": ["activeTab", "tabs", "storage", "webRequest", "webRequestBlocking"],
   "host_permissions": [
     "https://dns.google/*",
