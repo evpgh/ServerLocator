@@ -59,7 +59,7 @@ async function getContinentAndCountryFromHostname(hostname) {
       console.log(parts);
       const countryCode = parts[1].slice(0,2);
       const continentCode = getContinentFromCountryCode(countryCode);
-      const countryName = parts[3];
+      const countryName = parts[3].replace(/\s*\(the\)$/, "");
       chrome.storage.local.set({ [hostname]: { continent: continentCode, country: countryName } });
       return { continent: continentCode, country: countryName };
     } else {

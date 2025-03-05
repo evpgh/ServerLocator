@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       
       // Update UI elements
       document.getElementById('hostname').textContent = hostname;
-      document.getElementById('continent-country').textContent = `Continent: ${continentNames[continent] || "Unknown"}, Country: ${country}`;
+      document.getElementById('continent-country').textContent = `${country}, ${continentNames[continent] || "Unknown"}`;
       
       // Update icon
       const iconPath = continentIcons[continent] || continentIcons.unknown;
